@@ -1,0 +1,9 @@
+#! /bin/sh
+# bootstrap -- Use this script to create generated files from the CVS dist
+
+set -x
+aclocal -I config
+libtoolize --force --copy
+autoheader
+automake --add-missing --copy
+autoconf

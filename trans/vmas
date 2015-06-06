@@ -1,0 +1,4 @@
+#!/bin/sh
+
+AWK_FILE=$HOME/vm/trans/vmas.awk
+echo | gawk -f $AWK_FILE PID=$$ - "$@"

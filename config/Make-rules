@@ -1,0 +1,8 @@
+### for dual processor mode ###
+# AM_CFLAGS	= -O3 -Wall -I$(top_srcdir) -DENABLE_MP -DREENTRANT
+AM_CFLAGS	= -O3 -Wall -I$(top_srcdir) -DENABLE_MP -DREENTRANT -DNDEBUG
+
+
+### for single processor mode ###
+# AM_CFLAGS	= -O3 -Wall -I$(top_srcdir)
+# AM_CFLAGS	= -O3 -Wall -I$(top_srcdir) -DNDEBUG
